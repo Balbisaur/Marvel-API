@@ -19,7 +19,7 @@ const CharacterList = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=30d25ddacc2cbe54e2a70aa61f9d4e07&hash=b586917f47ef9f94b3fd834269141c98&offset=${offset}${filterLetter ? `&nameStartsWith=${filterLetter}` : ''}`,
+        `https://gateway.marvel.com/v1/public/characters?ts=1&apikey=5fd9ca13146465fb78bdc29c7f391567&hash=b586917f47ef9f94b3fd834269141c98&offset=${offset}${filterLetter ? `&nameStartsWith=${filterLetter}` : ''}`,
       );
       const data = response.data.data;
       setCharacters(prevCharacters => offset === 0 ? data.results : [...prevCharacters, ...data.results]);
