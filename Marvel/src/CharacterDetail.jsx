@@ -16,7 +16,7 @@ const CharacterDetail = ({ characterId }) => {
                           params: {
                             ts: '1',
                             apikey: '5fd9ca13146465fb78bdc29c7f391567',
-                            hash: '31f7f86db64459ce4cdd5a397c196119',
+                            hash: '1e6d9386272336e8e1440bb2a96f98f0',
                           },
                     });
                     setCharacter(response.data.data.results[0]);
